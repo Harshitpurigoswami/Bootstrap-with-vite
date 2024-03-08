@@ -21,29 +21,7 @@
 //     }
 //   }
 // })
-
-// import { resolve } from 'path'
-// import { defineConfig } from 'vite'
-
-// const root = resolve(__dirname, 'src');
-// const outDir = resolve(__dirname, 'dist'); 
-
-// export default defineConfig({
-//   // base: './',
-//   root,
-//   emptyOutDir: ture,
-//   build: {
-//     outDir,
-//     rollupOptions: { 
-//       main: resolve(__dirname, 'index.html'),
-//       about: resolve(__dirname, 'about.html'),
-//       contact: resolve(__dirname, 'contact.html'),
-//     },
-//       server: {
-//     port: 8080
-//   }
-//   }
-// })
+ 
 
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
@@ -51,7 +29,19 @@ import { defineConfig } from 'vite'
 const root = resolve(__dirname, 'src');
 const outDir = resolve(__dirname, 'dist');
 
+// 
+// const noAttr = () => {
+//   return {
+//     name: "no-attribute",
+//     transformIndexHtml(html) {
+//       return html.replace(`crossorigin`, "");
+//     }
+// }}
+ 
+// 
+
 export default defineConfig({
+  // plugins: [noAttr()],
   root,
   base: './',
   build: {
