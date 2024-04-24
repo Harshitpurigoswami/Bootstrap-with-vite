@@ -59,3 +59,24 @@ export default defineConfig({
   }
 })
 
+
+
+// new one build create 
+
+// import { resolve } from 'path'
+// export default {
+//   root: resolve(__dirname, 'src'),
+//   build: {
+//     emptyOutDir: '../dist',
+//     rollupOptions: {
+//       input: { 
+          //  main: resolve(resolve(__dirname, 'src'), 'index.html'),
+          //  about: resolve(resolve(__dirname, 'src'), 'about.html'),
+          //  contact: resolve(resolve(__dirname, 'src'), 'contact.html'),
+//       },
+//     },
+//   },
+//   server: {
+//     port: 8080
+//   }
+// }
